@@ -8,14 +8,19 @@
 <body>
 	<nav>
 		<a href="">
-			<img src="svg/logo.svg" alt="">
-			<span>KoyoTips</span>
+			<img src="img/koyotips_logo.jpg" alt="">
 		</a>
 	</nav>
 
 	<div class="title_bar">
 		<span class="art_title">小野先輩との対談</span>
 		<span class="art_day">yyyy/mm/dd</span>
+	</div>
+
+	<div class="who">
+		<img src="img/IMG_0741.JPG" alt="">
+		<div>人物名</div>
+		<p></p>
 	</div>
 
 	<div class="article">
@@ -45,6 +50,11 @@
 		</p>
 	</div>
 
+	<footer>
+		<img src="img/koyotips_logo.jpg" alt="" class="tips_logo">
+		<img src="img/pc_logo.svg" alt="" class="pc_logo">
+	</footer>
+
 </body>
 <style>
 	html, body {
@@ -71,6 +81,20 @@
 		justify-content: space-between;
 		align-items: flex-end;
 	}
+	.who {
+		margin: 5vh auto 5vh auto;
+		box-shadow: 0 0 5px rgba(0, 0, 0, .75);
+	}
+	.who > img {
+		object-fit: cover;
+	}
+	.who > div {
+		float: right;
+		box-sizing: border-box;
+	}
+	.who > p {
+
+	}
 	.article {
 		display: block;
 		width: 90%;
@@ -80,18 +104,26 @@
 		box-sizing: border-box;
 		margin: 5vh 0 5vh 0;
 	}
+	footer {
+		width: 100%;
+		box-shadow: 0 -5px 5px rgba(0, 0, 0, .10);
+	}
+	.tips_logo {
+
+	}
 	@media (orientation: portrait){
 		/* 縦長 */
 		nav {
 			height: 7vh;
 		}
-		nav > a > img {
-			height: 5vh;
-			margin: 1vh 2.5% 1vh 2%;
+		nav > a {
+			height: 7vh;
+			width: 180px;
+			margin: 0 auto 0;
 		}
-		nav > a > span {
-			font-size: 4vh;
-			line-height: 7vh;
+		nav > a > img {
+			width: 180px;
+			margin: 0 auto 0 auto;
 		}
 		.title_bar {
 			margin: 10vh auto 0 auto;
@@ -123,17 +155,36 @@
 		nav {
 			height: 70px;
 		}
-		nav > a > img {
-			height: 50px;
-			margin: 10px 2.5% 10px 2%;
+		nav > a {
+			height: 70px;
+			width: 180px;
+			margin: 0 auto 0;
 		}
-		nav > a > span {
-			font-size: 40px;
-			line-height: 70px;
+		nav > a > img {
+			width: 180px;
+			margin: 0 auto 0 auto;
 		}
 		.title_bar {
 			margin: 15vh auto 0 auto;
 			border-bottom: 3px solid rgb(0, 0, 0);
+		}
+		.who {
+			width: 90%;
+			height: 30vh;
+			margin: 5vh auto 5vh auto;
+		}
+		.who > img {
+			height: 30vh;
+			width: 50vh;
+			object-fit: cover;
+		}
+		.who > div {
+			width: calc(100% - 50vh);
+			height: 6vh;
+			padding-left: 3vw;
+			font-size: 4vh;
+			line-height: 6vh;
+			border-bottom: 3px solid black;
 		}
 		.art_title {
 			font-size: 40px;
@@ -155,6 +206,18 @@
 		}
 		.comment > strong {
 			margin-right: 1vw;
+		}
+		footer {
+			height: 12vh;
+			text-align: center;
+		}
+		.tips_logo {
+			height: 10vh;
+			margin: 1vh 2vw 1vh 0;
+		}
+		.pc_logo {
+			height: 6vh;
+			margin: 3vh 0 3vh 2vw;
 		}
 	}
 </style>
