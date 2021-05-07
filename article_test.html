@@ -17,10 +17,16 @@
 		<span class="art_day">yyyy/mm/dd</span>
 	</div>
 
-	<div class="who">
+	<div class="picture">
 		<img src="img/IMG_0741.JPG" alt="">
 		<div>人物名</div>
 		<p></p>
+	</div>
+
+	<div class="intro">
+		<p class="comment">
+			企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明企画説明
+		</p>
 	</div>
 
 	<div class="article">
@@ -67,9 +73,10 @@
 		box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .25);
 		position: fixed;
 		top: 0;
+		text-align: center;
 	}
 	nav > a {
-		display: block;
+		display: inline-block;
 		text-decoration: none;
 	}
 	nav > a > img {
@@ -81,21 +88,26 @@
 		justify-content: space-between;
 		align-items: flex-end;
 	}
-	.who {
+	.picture {
 		margin: 5vh auto 5vh auto;
 		box-shadow: 0 0 5px rgba(0, 0, 0, .75);
 	}
-	.who > img {
+	.picture > img {
 		object-fit: cover;
 		float: left;
 	}
-	.who > div {
+	.picture > div {
 		float: right;
 		box-sizing: border-box;
 	}
-	.who > p {
+	.picture > p {
 
 	}
+	.intro {
+		width: 90vw;
+		margin: 5vh auto 5vh auto;
+	}
+
 	.article {
 		display: block;
 		width: 90%;
@@ -109,39 +121,30 @@
 		width: 100%;
 		box-shadow: 0 -5px 5px rgba(0, 0, 0, .10);
 	}
-	.tips_logo {
-
-	}
 	@media (orientation: portrait){
 		/* 縦長 */
 		nav {
 			height: 7vh;
 		}
-		nav > a {
-			height: 7vh;
-			width: 140px;
-			margin: 0 auto 0;
-		}
 		nav > a > img {
-			/*width: 150px;*/
 			height: 6vh;
 			margin: .5vh auto .5vh auto;
 		}
 		.title_bar {
-			margin: 10vh auto 0 auto;
+			margin: 10vh auto 5vh auto;
 			border-bottom: 2px solid rgb(0, 0, 0);
 		}
-		.who {
+		.picture {
 			width: 90%;
 			height: 20vh;
 			margin: 5vh auto 5vh auto;
 		}
-		.who > img {
+		.picture > img {
 			height: 20vh;
 			width: 20vh;
 			object-fit: cover;
 		}
-		.who > div {
+		.picture > div {
 			width: calc(100% - 20vh);
 			height: 3vh;
 			padding-left: 3vw;
@@ -161,6 +164,9 @@
 		.sub_title {
 			width: 100%;
 			font-size: 1em;
+		}
+		.intro > .comment:first-letter {
+			margin-left: .9em;
 		}
 		.comment {
 			font-size: .9em;
@@ -187,30 +193,25 @@
 		nav {
 			height: 70px;
 		}
-		nav > a {
-			height: 70px;
-			width: 180px;
-			margin: 0 auto 0;
-		}
 		nav > a > img {
-			width: 180px;
-			margin: 0 auto 0 auto;
+			margin: 2.5px 0 2.5px 0;
+			height: 65px;
 		}
 		.title_bar {
-			margin: 15vh auto 0 auto;
+			margin: 15vh auto 15vh auto;
 			border-bottom: 3px solid rgb(0, 0, 0);
 		}
-		.who {
+		.picture {
 			width: 90%;
 			height: 30vh;
 			margin: 5vh auto 5vh auto;
 		}
-		.who > img {
+		.picture > img {
 			height: 30vh;
 			width: 50vh;
 			object-fit: cover;
 		}
-		.who > div {
+		.picture > div {
 			width: calc(100% - 50vh);
 			height: 6vh;
 			padding-left: 3vw;
@@ -230,6 +231,9 @@
 		.sub_title {
 			width: 100%;
 			font-size: 1.8em;
+		}
+		.intro > .comment:first-letter {
+			margin-left: 1.1em;
 		}
 		.comment {
 			padding: 1vh;
