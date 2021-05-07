@@ -87,6 +87,7 @@
 	}
 	.who > img {
 		object-fit: cover;
+		float: left;
 	}
 	.who > div {
 		float: right;
@@ -118,16 +119,35 @@
 		}
 		nav > a {
 			height: 7vh;
-			width: 180px;
+			width: 140px;
 			margin: 0 auto 0;
 		}
 		nav > a > img {
-			width: 180px;
-			margin: 0 auto 0 auto;
+			/*width: 150px;*/
+			height: 6vh;
+			margin: .5vh auto .5vh auto;
 		}
 		.title_bar {
 			margin: 10vh auto 0 auto;
 			border-bottom: 2px solid rgb(0, 0, 0);
+		}
+		.who {
+			width: 90%;
+			height: 20vh;
+			margin: 5vh auto 5vh auto;
+		}
+		.who > img {
+			height: 20vh;
+			width: 20vh;
+			object-fit: cover;
+		}
+		.who > div {
+			width: calc(100% - 20vh);
+			height: 3vh;
+			padding-left: 3vw;
+			font-size: 2vh;
+			line-height: 3vh;
+			border-bottom: 1px solid black;
 		}
 		.art_title {
 			font-size: 1.5em;
@@ -148,6 +168,18 @@
 		}
 		.comment > strong {
 			margin-right: .8em;
+		}
+		footer {
+			height: 6vh;
+			text-align: center;
+		}
+		.tips_logo {
+			height: 5vh;
+			margin: .5vh 2vw .5vh 0;
+		}
+		.pc_logo {
+			height: 4vh;
+			margin: 1vh 0 1vh 2vw;
 		}
 	}
 	@media (orientation: landscape){
