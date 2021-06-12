@@ -3,10 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/nav_move.js"></script>
 	<title>KoyoTips</title>
 </head>
 <body>
-	<nav>
+	<nav class="nav up">
 		<a href="">
 			<img src="img/koyotips_logo.png" alt="">
 		</a>
@@ -119,6 +120,14 @@
 			height: 6vh;
 			margin: .5vh auto .5vh auto;
 		}
+		.up {
+			top: 0;
+			transition: 0.3s ease;
+		}
+		.down {
+			top: calc(-7vh - 5px);
+			transition: 0.1s ease;
+		}
 		.title_bar {
 			margin: 10vh auto 10vh auto;
 			border-bottom: 2px solid rgb(0, 0, 0);
@@ -172,6 +181,14 @@
 		nav > a > img {
 			margin: 2.5px 0 2.5px 0;
 			height: 65px;
+		}
+		.up {
+			top: 0;
+			transition: 0.3s ease;
+		}
+		.down {
+			top: -75px;
+			transition: 0.1s ease;
 		}
 		.title_bar {
 			margin: 15vh auto 15vh auto;
