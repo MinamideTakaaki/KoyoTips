@@ -8,7 +8,7 @@
 <body>
 	<nav>
 		<a href="">
-			<img src="img/koyotips_logo.jpg" alt="">
+			<img src="img/koyotips_logo.png" alt="">
 		</a>
 	</nav>
 
@@ -17,11 +17,7 @@
 		<span class="art_day">yyyy/mm/dd</span>
 	</div>
 
-	<div class="picture">
-		<img src="img/IMG_0741.JPG" alt="">
-		<div>人物名</div>
-		<p></p>
-	</div>
+	<img class="picture" src="img/IMG_0741.JPG" alt="">
 
 	<div class="intro">
 		<p class="comment">
@@ -57,7 +53,7 @@
 	</div>
 
 	<footer>
-		<img src="img/koyotips_logo.jpg" alt="" class="tips_logo">
+		<img src="img/koyotips_logo.png" alt="" class="tips_logo">
 		<img src="img/pc_logo.svg" alt="" class="pc_logo">
 	</footer>
 
@@ -89,19 +85,9 @@
 		align-items: flex-end;
 	}
 	.picture {
-		margin: 5vh auto 5vh auto;
 		box-shadow: 0 0 5px rgba(0, 0, 0, .75);
-	}
-	.picture > img {
+		display: block;
 		object-fit: cover;
-		float: left;
-	}
-	.picture > div {
-		float: right;
-		box-sizing: border-box;
-	}
-	.picture > p {
-
 	}
 	.intro {
 		width: 90vw;
@@ -119,7 +105,10 @@
 	}
 	footer {
 		width: 100%;
-		box-shadow: 0 -5px 5px rgba(0, 0, 0, .10);
+		background-color: ghostwhite;
+	}
+	footer > img {
+		vertical-align: middle;
 	}
 	@media (orientation: portrait){
 		/* 縦長 */
@@ -136,21 +125,8 @@
 		}
 		.picture {
 			width: 90%;
-			height: 20vh;
-			margin: 5vh auto 5vh auto;
-		}
-		.picture > img {
-			height: 20vh;
-			width: 20vh;
-			object-fit: cover;
-		}
-		.picture > div {
-			width: calc(100% - 20vh);
-			height: 3vh;
-			padding-left: 3vw;
-			font-size: 2vh;
-			line-height: 3vh;
-			border-bottom: 1px solid black;
+			/*height: 20vh;*/
+			margin: 5vh auto 10vh auto;
 		}
 		.art_title {
 			font-size: 1.5em;
@@ -202,22 +178,9 @@
 			border-bottom: 3px solid rgb(0, 0, 0);
 		}
 		.picture {
-			width: 90%;
-			height: 30vh;
-			margin: 5vh auto 5vh auto;
-		}
-		.picture > img {
-			height: 30vh;
-			width: 50vh;
-			object-fit: cover;
-		}
-		.picture > div {
-			width: calc(100% - 50vh);
-			height: 6vh;
-			padding-left: 3vw;
-			font-size: 4vh;
-			line-height: 6vh;
-			border-bottom: 3px solid black;
+			width: 50vw;
+			height: 50vh;
+			margin: 5vh auto 10vh auto;
 		}
 		.art_title {
 			font-size: 40px;
