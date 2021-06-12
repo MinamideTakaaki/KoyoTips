@@ -3,13 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/nav.css">
+	<script type="text/javascript" src="js/nav_move.js"></script>
 	<title>Home | KoyoTips</title>
 </head>
 <body>
-	<nav>
+	<nav class="nav up">
 		<a href="">
-			<img src="svg/logo.svg" alt="">
-			<span>KoyoTips</span>
+			<img src="img/koyotips_logo.png" alt="">
 		</a>
 	</nav>
 
@@ -22,46 +23,6 @@
 <style>
 	html, body {
 		margin: unset;
-	}
-	nav {
-		width: 100%;
-		background-color: rgb(255, 255, 255);
-		box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .25);
-	}
-	nav > a {
-		display: block;
-		text-decoration: none;
-	}
-	nav > a > img {
-		float: left;
-	}
-	@media (orientation: portrait){
-		/* 縦長 */
-		nav {
-			height: 7vh;
-		}
-		nav > a > img {
-			height: 5vh;
-			margin: 1vh 2.5% 1vh 2%;
-		}
-		nav > a > span {
-			font-size: 4vh;
-			line-height: 7vh;
-		}
-	}
-	@media (orientation: landscape){
-		/* 横長 */
-		nav {
-			height: 70px;
-		}
-		nav > a > img {
-			height: 50px;
-			margin: 10px 2.5% 10px 2%;
-		}
-		nav > a > span {
-			font-size: 40px;
-			line-height: 70px;
-		}
 	}
 </style>
 </html>
